@@ -8,3 +8,11 @@ alert(yearCreationIphone)
 // task 3
 const creatorJavaScript="Брендан Эйх Ву"
 alert(`Создатель языка JavaScript ${creatorJavaScript}`);
+// task 4
+let x=10
+let y=2
+let d=x+y
+    e=x-y
+    f=x*y
+    g=x/y
+alert([d, e, f, g])
