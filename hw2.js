@@ -36,3 +36,9 @@ alert(num);
 //task 8
 let age = prompt("Сколько вам лет?")
 alert(age)
+// task 9
+const user = {
+name:'John',
+age: 3,
+isAdmin: true
+};
