@@ -49,6 +49,8 @@ user.age = 5
 //9.3
 delete user ['city of residence']
 //9.4
- let info =  prompt("Что хотите узнать о пользователе?,");
+ let info =  prompt("Что хотите узнать о пользователе?");
 alert(user[info]);
-    
+// task 10
+const username = prompt("Как вас зовут?");
+alert(`Привет, ${username}!`);
