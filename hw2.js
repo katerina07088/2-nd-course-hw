@@ -34,11 +34,21 @@ num++;
 num--;
 alert(num);
 //task 8
-let age = prompt("Сколько вам лет?")
-alert(age)
+let age =Number(prompt("Сколько вам лет?"));
+alert(age);
 // task 9
 const user = {
 name:'John',
 age: 3,
 isAdmin: true
 };
+// 9.1
+user ["city of residence"] = "Moscow";
+// 9.2
+user.age = 5
+//9.3
+delete user ['city of residence']
+//9.4
+ let info =  prompt("Что хотите узнать о пользователе?,");
+alert(user[info]);
+    
