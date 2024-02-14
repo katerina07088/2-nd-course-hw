@@ -5,3 +5,6 @@ alert(a+10)
 // task 2
 const yearCreationIphone=2007
 alert(yearCreationIphone)
+// task 3
+const creatorJavaScript="Брендан Эйх Ву"
+alert(`Создатель языка JavaScript ${creatorJavaScript}`);
