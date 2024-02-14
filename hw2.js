@@ -19,3 +19,8 @@ alert([d, e, f, g])
 // task 5
 let result=2**5
 alert(result)
+// task 6
+let i=9
+let b=2
+let number =9%2
+alert(number)
