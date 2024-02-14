@@ -33,3 +33,6 @@ num/=3;
 num++;
 num--;
 alert(num);
+//task 8
+let age = prompt("Сколько вам лет?")
+alert(age)
