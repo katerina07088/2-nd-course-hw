@@ -16,3 +16,6 @@ let d=x+y
     f=x*y
     g=x/y
 alert([d, e, f, g])
+// task 5
+let result=2**5
+alert(result)
