@@ -69,10 +69,7 @@ switch (monthNumber) {
 }
 //task 7 не решила
 let anyNumber = Number(prompt("Пожалуйста, введите любое число"));
-if  (!isNan(anyNumber)) {
-    alert('Ввели не число');
-}
- else if (anyNumber % 2===0) {
+if (anyNumber % 2===0) {
     alert('Четное число');
 } else {
     alert('Нечетное число');  
