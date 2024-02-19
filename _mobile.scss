@@ -19,8 +19,24 @@
    margin-bottom: 32px;
 }
 }
+.game__box{
+    gap:32px;
+}
 .game__box-img{
    width: 343px;
    height: 300px;
+}
+.seasons__heading{
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+}
+.seasons__text{
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+.seasons__button{
+ align-self: center;
 }
 }
