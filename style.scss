@@ -65,7 +65,6 @@ a {
         font-weight: 700;
     }
 }
-
 .game {
     background-color: rgb(0, 9, 21);
     &__box {
@@ -98,10 +97,10 @@ a {
         left: 32px;
     }
     &__box-img {
+        width: 378px;
+        height:100%;        
         border-radius: 16px;
         background: linear-gradient(180.00deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%);
-        width: 379px;
-        height:100%;
 }
 }
 .seasons-box{
