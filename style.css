@@ -87,7 +87,7 @@ a {
   border: 3px solid rgb(68, 210, 255);
   border-radius: 16px;
 }
-.game__text {
+.game__number {
   color: rgb(255, 255, 255);
   font-size: 24px;
   font-weight: 600;
