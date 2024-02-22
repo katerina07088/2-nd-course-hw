@@ -29,13 +29,16 @@ for (let key in obj) {
     console.log(`${key}: - зарплата ${obj[key]} долларов`);
 }
 //task5
-for (let c = 1000; c > 50; c /= 2){
-    console.log (c)
+let num = 0
+for (let c = 1000; c > 50; c /= 2) {
+ num = num + 1;   
+ console.log(c);
 }
-let num = 5;
+console.log(num); 
+
 //task6
 let d = 7;
-for (let dayNumber = 5; dayNumber < 31; dayNumber+=7){
+for (let dayNumber = 5; dayNumber <= 31; dayNumber+=7){
     console.log (`Сегодня пятница, ${dayNumber} число. Необходимо сделать отчет.`)
 }
 
