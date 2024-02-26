@@ -68,10 +68,11 @@ console.log(getNumber(7,9))
 //task 6
 function callNumber() {
     let userNumber = prompt('Назовите число');
+    userNumber = Number(userNumber);
     if (isNaN (userNumber)) {
         return 'Переданный параметр не является числом';
     } else { 
-        return userNumber**3 ;
+        return `${userNumber} в кубе равно ${userNumber**3}`;
     }
 }
 console.log(callNumber());
