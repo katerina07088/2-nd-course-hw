@@ -13,9 +13,6 @@ while (a <= 5) {
 //task3
 let b = 7;
 while (b <= 22) {
-    if( b===23) {
-        break;
-    }
     console.log(b);
     b++
 }
@@ -31,10 +28,20 @@ for (let key in obj) {
 //task5
 let num = 0
 for (let c = 1000; c > 50; c /= 2) {
- num = num + 1;   
+ num = num ++;   
  console.log(c);
 }
 console.log(num); 
+
+// task5
+let c = 1000
+let numb = 0
+while (c >=50){
+    c/=2
+    numb++
+}
+console.log('Число:',c);
+console.log('Количество итераций:',numb); 
 
 //task6
 let d = 7;
