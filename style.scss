@@ -119,7 +119,7 @@ a {
     padding-top: 282px;
     padding-bottom: 233px;
     display: flex;
-    gap: 135px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -163,9 +163,9 @@ a {
         }
     }
 
-    &__picture {
-        width: 442px;
-        height: 315px;
+    &__picture-img {
+        width: 485px;
+        height: 333px;
     }
 }
 

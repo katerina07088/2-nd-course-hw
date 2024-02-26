@@ -109,7 +109,7 @@ a {
   padding-top: 282px;
   padding-bottom: 233px;
   display: flex;
-  gap: 135px;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -149,9 +149,9 @@ a {
 .seasons__button:hover {
   background-color: rgb(235, 68, 63);
 }
-.seasons__picture {
-  width: 442px;
-  height: 315px;
+.seasons__picture-img {
+  width: 485px;
+  height: 333px;
 }
 
 @media (max-width: 767px) {
@@ -182,6 +182,11 @@ a {
     width: 343px;
     height: 100%;
   }
+  .seasons-box {
+    gap: 64px;
+    padding-top: 51px;
+    padding-bottom: 85px;
+  }
   .seasons__heading {
     font-size: 32px;
     line-height: 39px;
@@ -194,5 +199,9 @@ a {
   }
   .seasons__button {
     align-self: center;
+  }
+  .seasons__picture-img {
+    width: 344px;
+    height: 236px;
   }
 }/*# sourceMappingURL=style.css.map */
