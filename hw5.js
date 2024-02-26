@@ -99,3 +99,18 @@ console.log(`Площадь окружности1: ${circle1.getArea()}`);
 console.log(`Площадь окружности2: ${circle2.getArea()}`);
 console.log(`Периметр окружности1: ${circle1.getPerimeter()}`);
 console.log(`Периметр окружности2: ${circle2.getPerimeter()}`);
+
+
+//task 8
+function whatSeason(monthNumber) {
+    if (monthNumber==12 && monthNumber<=2) {
+        return `Зима`
+    } else if (monthNumber>=3 && monthNumber<=5) {
+        return `Весна`  
+    } else if (monthNumber>=6 && monthNumber<=8) {
+        return `Лето`  
+    } else if (monthNumber>=9 && monthNumber<=11) {
+        return `Осень`  
+    }
+}
+whatSeason(5)
