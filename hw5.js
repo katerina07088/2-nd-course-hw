@@ -40,20 +40,20 @@ function numbQuater(a) {
 }
 console.log(numbQuater(10));
 
-// task 4
-//function howOld() {
-//let userAnswer = prompt('Сколько вам лет?');
-//if (userAnswer < 1) {
-    //alert ('Вы ввели неправильное значение ');
-//} else if (userAnswer <= 12) {
-    //alert ('Привет, друг!');
-//} else{
-    //alert ('Добро пожаловать!');
-//}
-//}
-//howOld()
+ //task 4
+function howOld() {
+let userAnswer = prompt('Сколько вам лет?');
+if (userAnswer < 1) {
+    alert ('Вы ввели неправильное значение ');
+} else if (userAnswer <= 12) {
+    alert ('Привет, друг!');
+} else{
+    alert ('Добро пожаловать!');
+}
+}
+howOld()
 
-//task 5 ???
+//task 5 ??? не работает, выдает всегда первый return
 function getNumber(e,d) {
     let eNum = Number(e);
     let dNum = Number(d);
@@ -101,8 +101,9 @@ console.log(`Периметр окружности1: ${circle1.getPerimeter()}`)
 console.log(`Периметр окружности2: ${circle2.getPerimeter()}`);
 
 
-//task 8
-function whatSeason(monthNumber) {
+//task 8 повторяется 2 раза, при загрузке страницы и нажатии на кнопку "играть"
+function whatSeason() {
+    let monthNumber=prompt('Введите номер месяца');
     if (monthNumber==12 && monthNumber<=2) {
         return `Зима`
     } else if (monthNumber>=3 && monthNumber<=5) {
@@ -111,6 +112,8 @@ function whatSeason(monthNumber) {
         return `Лето`  
     } else if (monthNumber>=9 && monthNumber<=11) {
         return `Осень`  
+    } else {
+        return `Введите номер месяца еще раз`
     }
 }
-whatSeason(5)
+console.log(whatSeason())
