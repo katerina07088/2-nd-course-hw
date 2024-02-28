@@ -53,11 +53,9 @@ if (userAnswer < 1) {
 }
 howOld()
 
-//task 5 ??? не работает, выдает всегда первый return
+//task 5 
 function getNumber(e,d) {
-    let eNum = Number(e);
-    let dNum = Number(d);
-    if (isNaN(eNum) || (dNum)) {
+    if (isNaN(e) || isNaN(d)) {
         return 'Одно или оба значения не являются числом';
     } else {
        return e*d; 
@@ -67,8 +65,7 @@ console.log(getNumber(7,9))
 
 //task 6
 function callNumber() {
-    let userNumber = prompt('Назовите число');
-    userNumber = Number(userNumber);
+    let userNumber =Number(prompt('Назовите число'));
     if (isNaN (userNumber)) {
         return 'Переданный параметр не является числом';
     } else { 
@@ -101,10 +98,10 @@ console.log(`Периметр окружности1: ${circle1.getPerimeter()}`)
 console.log(`Периметр окружности2: ${circle2.getPerimeter()}`);
 
 
-//task 8 повторяется 2 раза, при загрузке страницы и нажатии на кнопку "играть"
+//task 8 
 function whatSeason() {
     let monthNumber=prompt('Введите номер месяца');
-    if (monthNumber==12 && monthNumber<=2) {
+    if (monthNumber==12 || monthNumber==1 || month==2) {
         return `Зима`
     } else if (monthNumber>=3 && monthNumber<=5) {
         return `Весна`  
@@ -113,7 +110,7 @@ function whatSeason() {
     } else if (monthNumber>=9 && monthNumber<=11) {
         return `Осень`  
     } else {
-        return `Введите номер месяца еще раз`
+        return `Неизвестное значение`
     }
 }
 console.log(whatSeason())
