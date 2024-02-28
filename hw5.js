@@ -101,7 +101,7 @@ console.log(`Периметр окружности2: ${circle2.getPerimeter()}`)
 //task 8 
 function whatSeason() {
     let monthNumber=prompt('Введите номер месяца');
-    if (monthNumber==12 || monthNumber==1 || month==2) {
+    if (monthNumber==12 || monthNumber==1 || monthNumber==2) {
         return `Зима`
     } else if (monthNumber>=3 && monthNumber<=5) {
         return `Весна`  
@@ -113,4 +113,3 @@ function whatSeason() {
         return `Неизвестное значение`
     }
 }
-console.log(whatSeason())
