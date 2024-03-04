@@ -107,3 +107,14 @@ function negativeNumbers (arr) {
 console.log (negativeNumbers (myArr));
 
 //task 14
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}  
+const firstArray = []
+for (let i = 1; i < g.length; i++){
+    firstArray.push(getRandomNumber(0,10));
+}
+console.log(firstArray)
+const secondArray = firstArray.filter(el => el % 2 === 0);
+console.log (secondArray)
+//task 15
