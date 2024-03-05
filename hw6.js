@@ -117,4 +117,13 @@ for (let i = 1; i < g.length; i++){
 console.log(firstArray)
 const secondArray = firstArray.filter(el => el % 2 === 0);
 console.log (secondArray)
+
 //task 15
+const againArray = [];
+for (let i = 0; i < 6; i++) {
+    againArray.push(getRandomNumber(0,10));// использую функцию из 14 задачи
+}
+console.log (againArray);
+let sumAgainArray = againArray.reduce((total, number) => total + number, 0); // как объединить эту и след строку
+const midAgainArray = sumAgainArray / againArray.length
+console.log (midAgainArray);
