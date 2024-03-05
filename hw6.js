@@ -23,20 +23,15 @@ const numbe = [1, 3, 5, 10, 20];
 let numb = numbe.join(" ");
 console.log(numb);
 
-//task 4  ???
-const k = [];
-// Заводим основной цикл, через который будет происходить добавление пустых массивов
+//task 4  
+const arr1 = [];
 for (let i = 0; i < 3; i++) {
-// Пушим пустые массивы в изначальный, чтобы создать вложенность
-k.push([]);
-// Создаем дополнительный цикл, чтобы добавить единички
+arr1.push([]);                   // arr1[i] = [];
 for (let j = 1; j <= 3; j++) {
-// Пушим единички в подмассив
-k[i].push("1");
+arr1[i].push("1");                //arr1[i][j] = 1;
   }
 }
-console.log(k);
-
+console.log(arr1);
 
 //task5
 const arr = [1, 1, 1];
@@ -49,7 +44,7 @@ arra.sort();
 const filterArra = arra.filter((el) => typeof el === "number");  ///!!!!! почему number в кавычках
 console.log (filterArra);
 
- //task7
+//task7
 const a = [9, 8, 7, 6, 5]
 let b = Number(prompt("Введите любое число"));
     if (a.includes(b)) {
