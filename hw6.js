@@ -1,8 +1,8 @@
 //task 1
 const numbers =[1, 5, 4, 10, 0, 3];
 for ( let i=0; i< numbers.length; i++){
-    console.log(numbers[i]);  //!!! почему смена их порядка дает разный результат
-    if (numbers[i]===10)break; ////!!!
+    console.log(numbers[i]);  
+    if (numbers[i]===10)break; 
 }
 //task2 
 const num = [1, 5, 4, 10, 0, 3];
@@ -41,7 +41,7 @@ console.log(arr);
 //task 6 
 const arra = [9, 8, 7, 'a', 6, 5];
 arra.sort();
-const filterArra = arra.filter((el) => typeof el === "number");  ///!!!!! почему number в кавычках
+const filterArra = arra.filter((el) => typeof el === "number"); 
 console.log (filterArra);
 
 //task7
@@ -80,7 +80,7 @@ for (let i = 0; i < g.length - 1; i++) {
 }
 ///or
 const p = [3, 5, 7, 9, 8, 2, 1];
-for (let i = 1; i < g.length; i++) {  //!!!! почему надо изменить i на 1 в этом решении
+for (let i = 1; i < g.length; i++) { 
     console.log(p[i]+p[i-1]);
 }
 
@@ -119,6 +119,6 @@ for (let i = 0; i < 6; i++) {
     againArray.push(getRandomNumber(0,10));// использую функцию из 14 задачи
 }
 console.log (againArray);
-let sumAgainArray = againArray.reduce((total, number) => total + number, 0); // как объединить эту и след строку
+let sumAgainArray = againArray.reduce((total, number) => total + number, 0); 
 const midAgainArray = sumAgainArray / againArray.length
 console.log (midAgainArray);
