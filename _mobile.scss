@@ -48,4 +48,41 @@
     width: 344px;
     height: 236px;
 }
+
+.words-box{
+    gap:64px;
+    padding-top: 51px;
+    padding-bottom: 90px;
+}
+.words__heading{
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+}
+.words__text{
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+.words__picture-img{
+    width: 344px;
+    height: 231px;
+}
+.riddles-box{
+    padding-top: 51px;
+    padding-bottom: 487px;
+}
+.riddles{
+    width:343px;
+}
+.riddles__heading{
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+}
+.riddles__text{
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
 }
