@@ -45,3 +45,27 @@ const randomArr = (num) => {
   }
   console.log( randomNumber = createRandomNumber(2,10));
   //task8
+  let currentDate = new Date();
+  console.log(currentDate);
+
+  //task9
+  let myDate = new Date();
+  let someDaysLater = 73  * 24 * 60 * 60 * 1000;
+  let searchDate = +myDate + someDaysLater;
+  let daysLater = new Date(searchDate);
+  console.log(daysLater);
+
+  //task 10
+  const days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг',
+  'Пятница', 'Суббота'];
+  const months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+  'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+  let myCurrentDate = new Date();
+  let fullDate = "Дата:"+myCurrentDate.getDate()
+  +myCurrentDate.getMonth()
+  +myCurrentDate.getFullYear() + " - это день недели"+ myCurrentDate.getDay();
+  let time = "Время:"+myCurrentDate.getHours()+":" +myCurrentDate.getMinutes()+":"+myCurrentDate.getSeconds();
+  console.log(fullDate);
+  console.log(time);
+  //task 11
+

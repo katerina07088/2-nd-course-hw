@@ -236,7 +236,7 @@ a {
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .center {
     padding-left: calc(50% - 172px);
     padding-right: calc(50% - 172px);
