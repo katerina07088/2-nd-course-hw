@@ -1,9 +1,12 @@
 //task1
 let str = 'js';
 console.log(str.toUpperCase());
-//task2 !!!
 
-
+//task2 
+function getElOfStr (array,str) {
+   return array.filter(el => el.toLowerCase(str).startsWith(str));
+}
+console.log(getElOfStr(['весна', 'осень', 'Лето', 'лето', 'Зима', 'Весна' ], 'лето'));
 
 //task3
 let number = 32.58884;
@@ -16,7 +19,11 @@ const aArray = [52, 53, 49, 77, 21, 32];
 console.log(Math.max(...aArray)); //// что дал метод spread здесь
 console.log(Math.min(...aArray));
 
-//task 5 !!!
+//task 5
+function getRandomNum(max,min) {
+    return Math.floor(Math.random() * (max - min) + min);
+    }
+    console.log(getRandomNum(0,10))
 
 //task6
 //function createArray(num) {
@@ -37,3 +44,4 @@ const randomArr = (num) => {
     return Math.floor(Math.random() * (max - min) + min);
   }
   console.log( randomNumber = createRandomNumber(2,10));
+  //task8
