@@ -12,3 +12,18 @@ function whatSeason() {
         return `Неизвестное значение`
     }
 }
+function playGuessWords() {
+    let fruit = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    fruit = fruit.sort(() => Math.random() - 0.5);
+    alert(fruit);
+    let firstWordUser = prompt('Введите первое слово.');
+    let thirdWordUser = prompt('Введите третье слово.');
+    if (firstWordUser === fruit[0] && thirdWordUser === fruit[2]) {
+      alert("Верно");
+    } else if (firstWordUser === fruit[0] || thirdWordUser === fruit[2]) {
+      alert("Вы были близки к победе.");
+    } else {
+      alert("Неверно");
+    }
+  }
+    

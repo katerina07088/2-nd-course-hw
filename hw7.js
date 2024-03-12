@@ -57,10 +57,10 @@ const randomArr = (num) => {
   const months = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
   'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
   let myCurrentDate = new Date();
-  let fullDate = "Дата:"+myCurrentDate.getDate()
-  +myCurrentDate.getMonth()
-  +myCurrentDate.getFullYear() + " - это день недели"+ myCurrentDate.getDay();
-  let time = "Время:"+myCurrentDate.getHours()+":" +myCurrentDate.getMinutes()+":"+myCurrentDate.getSeconds();
+  let fullDate = "Дата: "+myCurrentDate.getDate()
+  +" "+ months[myCurrentDate.getMonth()]+ " "
+  + myCurrentDate.getFullYear() + " - это день недели"+ " " + days[myCurrentDate.getDay()];
+  let time = "Время: "+myCurrentDate.getHours()+":" +myCurrentDate.getMinutes() + ":" + myCurrentDate.getSeconds();
   console.log(fullDate);
   console.log(time);
 
@@ -68,7 +68,7 @@ const randomArr = (num) => {
   function playGuessWords() {
   let fruit = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
   fruit = fruit.sort(() => Math.random() - 0.5);
-  console.log (fruit);
+  alert(fruit);
   let firstWordUser = prompt('Введите первое слово.');
   let thirdWordUser = prompt('Введите третье слово.');
   if (firstWordUser === fruit[0] && thirdWordUser === fruit[2]) {
