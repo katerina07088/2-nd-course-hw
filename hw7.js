@@ -26,10 +26,6 @@ function getRandomNum(max,min) {
     console.log(getRandomNum(0,10))
 
 //task6
-//function createArray(num) {
-    //return Math.floor(Math.random() * (max - min) + min)
-//}
-//or
 const randomArr = (num) => {
     let arr = [];
     for (let i = 0; i < num/2; i++) {
@@ -67,5 +63,20 @@ const randomArr = (num) => {
   let time = "Время:"+myCurrentDate.getHours()+":" +myCurrentDate.getMinutes()+":"+myCurrentDate.getSeconds();
   console.log(fullDate);
   console.log(time);
-  //task 11
 
+  //task 11
+  function playGuessWords() {
+  let fruit = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+  fruit = fruit.sort(() => Math.random() - 0.5);
+  console.log (fruit);
+  let firstWordUser = prompt('Введите первое слово.');
+  let thirdWordUser = prompt('Введите третье слово.');
+  if (firstWordUser === fruit[0] && thirdWordUser === fruit[2]) {
+    alert("Верно");
+  } else if (firstWordUser === fruit[0] || thirdWordUser === fruit[2]) {
+    alert("Вы были близки к победе.");
+  } else {
+    alert("Неверно");
+  }
+}
+  
