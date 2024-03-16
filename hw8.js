@@ -55,10 +55,14 @@ const people = [
     console.log(filter(peoplePeople, isMale));
 
     //task 3
-    let currentDate = new Date();
-    let timerId = setInterval(() => console.log(currentDate), 3000);
-    setTimeout(() => { clearInterval(timerId); console.log ('«30 секунд прошло»');}, 30000);
-
+    function repeatDate (){
+      const timerId = setInterval(() => {
+          console.log(new Date)}, 300);
+      setTimeout(() => { 
+          clearInterval(timerId); 
+      console.log ('«30 секунд прошло»');}, 3000);
+     }
+    repeatDate (new Date());
 
     //task4
     function delayForSecond(callback) {
